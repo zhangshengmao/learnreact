@@ -1,0 +1,15 @@
+.com-footer{
+    position:fixed;bottom:0;left:0;width:100%;height:50px;background-color:white;
+    ul{display: flex;
+        .cc{
+            color:red;
+        }
+        li{
+            flex:1;text-align:center;color:#DA0000;padding-top:10px;border-top:1px solid #ccc;
+            a{
+                color:black;
+            }
+            .anticon{font-size:20px;display:block;}
+        }
+    }
+}

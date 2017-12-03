@@ -1,0 +1,46 @@
+// mainRed : #f46e65
+#app{height:100%;
+    &>div{height:100%;}
+}
+#buycar{display:flex;flex-direction:column;height:100%;position:relative;
+    #bcheader{height:50px;position:relative;line-height:50px;
+        i:nth-of-type(1){position:absolute;top:12px;left:20px;}
+        h2{font-size:20px;text-align:center;}
+        i:nth-of-type(2){position:absolute;top:12px;right:20px;width:10%;left:auto;color:#f46e65;font-size:24px;
+        }
+    }
+    #bcfooter{height:50px;display:flex;font-size:14px;
+        .selAll{flex:2;text-align:left;padding-left:10px;vertical-align:middle;line-height:50px;
+            i{font-size:18px;margin-right:3px;
+            }
+        }
+        .totalPri{flex:4;color:#f46e65;margin-top:3px;
+            span:nth-of-type(1){font-weight:bold;}
+            span:nth-of-type(2){color:#AAAAAA;}
+        }
+        .account{flex:2;background-color:#f46e65;color:#fff;font-size:18px;line-height:50px;text-align:center;}
+
+    }
+    #bcmain{flex:1;background-color:#f4f4f4;position:relative;border-top:1px solid #AAAAAA;border-bottom:1px solid #AAAAAA;height:100%;overflow-y: scroll;
+        .nothing{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;
+            img{width:50%;}
+            p{color:#999999;margin-top:2%;margin-bottom:4%;}
+            a{display:block;width:70%;margin-left:15%;height:30px;line-height:30px;font-size:14px;text-align:center;border:1px solid #f46e65;border-radius:5px;background-color:#f46e65;color:#fff;}
+        }
+        .buycarList{margin-top:14px;border-top:1px solid #AAAAAA;border-bottom:1px solid #AAAAAA;background-color:#fff;padding-top:12px;
+            li{display:flex;border-top:1px dashed #aaaaaa;padding-top:10px;margin-bottom:8px;
+                .checkBox{flex:1;position:relative;
+                    i{font-size:18px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+                }
+                .imgbox{flex:3.5;
+                    img{width:100%;}
+                }
+                .info{flex:6;padding:0 10px;font-size:12px;position:relative;
+                    p:nth-of-type(2){color:#f46e65;font-weight:bold;margin:4px 0;}
+                    span{display:inline-block;width: 20px;height: 20px;text-align:center;line-height:20px;border:1px solid #aaa;font-size:14px;}
+                    i{font-size:20px;position:absolute;bottom:0;right:10px;}
+                }
+            }
+        }
+    }
+}

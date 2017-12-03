@@ -1,0 +1,47 @@
+.myAddressEdit{
+    .personalHead{
+        height:50px;
+        background:#Da0000;
+        div{position:absolute;left:10px;top:0;}
+        text-align:center;line-height:50px;
+        h3{color:#fff;font-size:20px;}
+    }
+    // <div className="setContent">
+    //     <div><label>收货地址</label><input type="text"/></div>
+    //     <div><label>收货人手机</label><input type="text"/></div>
+    //     <div><label>省、市、区</label><input type="text"/></div>
+    //     <div><label>详细地址地址</label><input type="text"/></div>
+    //     <div><span>保存</span></div>
+    // </div>
+    .setContent{padding: 0 5% 20px 5%;
+        background:#fff;
+        div:first-child{margin-top:10px;}
+        div{overflow:hidden;border-bottom:1px solid #ccc;padding-top:10px;
+            label,input{float:left;height:40px;line-height:40px;font-size:16px;}
+            label{width:25%;}
+            input{width:65%;border:0 none;}
+            span{display:block;width:80%;height:35px;font-size:18px;color:#fff;background:#da0000;margin:0 auto;text-align:center;border-radius:10px;}
+        }
+        div:last-child{
+            border-bottom:0px none;padding-top:30px;
+        }
+    }
+    .setSix{
+        select{
+            option{
+                border: 0px none;
+                font-size:16px;
+            }
+            width: 65%;
+            height: 35px;
+            border: 0px none;
+                font-size:16px;
+
+        }
+    }
+    .mysign{
+        textarea{
+            font-size:16px;
+        }
+    }
+}

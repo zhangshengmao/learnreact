@@ -1,0 +1,49 @@
+.MyCollect{
+    .personalHead{
+        height:50px;
+        background:#Da0000;
+        div{position:absolute;left:10px;top:0;}
+        text-align:center;line-height:50px;
+        h3{color:#fff;font-size:20px;}
+    }
+    .collectContent {position:relative;
+        &>div:last-child{
+            position:absolute;left:30%;top:130px;text-align:center;
+            font-size:16px;
+            p{padding-left:12px;}
+            span{background:#da0000;display:block;padding:8px;color:#fff;border-radius:5px;margin-top:15px;}
+        }
+    }
+    // <div className="collectgoods">
+    //     <div><img src="./src/asset/DMY-XL-A934-15C.jpg"/></div>
+    //     <div>
+    //         <div>名字</div>
+    //         <div>
+    //             <span>100</span>
+    //             <span>100</span>
+    //         </div>
+    //     </div>
+    // </div>
+    .collectContent1{
+        .collectgoods:first-child{
+            margin-top:10px;
+        }
+        .collectgoods{padding:10px 5%;background:#fff;overflow:hidden;border-bottom:1px solid #ccc;
+            &>div:first-child{
+                float:left;
+                width:40%;
+                img{width:100%;height:92px;}
+            }
+            &>div:last-child{
+                float:right;
+                width:50%;
+                font-size:16px;position:relative;
+                span{display:block;}
+                span:first-child{color:red;}
+                i{position:absolute;bottom:5px;right:15px;}
+            }
+        }
+    }
+    
+    
+}

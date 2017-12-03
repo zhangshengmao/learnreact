@@ -1,0 +1,37 @@
+.accSecu{
+    .personalHead{
+        height:50px;
+        background:#Da0000;
+        div{position:absolute;left:10px;top:0;}
+        text-align:center;line-height:50px;
+        h3{color:#fff;font-size:20px;}
+    }
+    .accContent{
+        &>div:first-child{
+            margin-top:10px;
+        }
+        &>div,.address{position:relative;
+            padding:10px;border-bottom:1px solid #D8D8D8;
+            background:#fff;overflow:hidden;
+            span{font-size:16px;line-height:50px;}
+            span:first-child{
+                float:left;
+                color:black;color:#ccc;
+                i{
+                    font-size:20px;
+                }
+            }
+            .lastSpan{
+                float:right;
+                display:block;
+                margin-right:50px;
+                border-radius:50%;
+                width: 50px;
+                height:50px;overflow:hidden;
+                img{width:50px;height:50px;}
+            }
+            &>i{position:absolute;right:15px;top:25px;font-size:20px;color:#696969;}
+        }
+    }
+    
+}

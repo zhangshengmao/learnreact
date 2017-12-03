@@ -1,0 +1,61 @@
+.list{
+    .none-goods{text-align: center;width:100%;margin-top:30%;
+        img{}
+        p{font-size: 18px;}
+    }
+    .list-head{height:90px;position: fixed;top:0;left:0;width:100%;z-index: 9;background-color: #fff;
+        .list-search{display:flex;justify-content:space-between;align-items:center;width:100%;height:50px;padding:0 18px;box-sizing:border-box;border-bottom:1px solid rgba(7,17,27,.1);
+            .sort-hb{}
+            .sort-sh{height:34px;width:70%;}
+            .sort-links{font-size: 20px; color: rgb(224,110,101);font-weight: bold;}
+        }
+        .list-filter{
+            ul{display: flex;align-items: center;height:40px;box-sizing: border-box;border-bottom:1px solid rgba(7,17,27,.1);
+                li{flex: 1;text-align: center;font-size: 16px;padding-left:10%;
+                    .icon-down,.icon-fold{display: none;}
+                    .icon-down,.icon-up{font-size: 14px;margin-left:3px;}
+                    .icon-up{color:transparent;}
+                    &.current{color:rgb(244,110,101);
+                        &.price-up{
+                            .icon-up{display: inline-block;color:rgb(244,110,101);}
+                            .icon-down{display: none;}
+                        }
+                        &.price-down{
+                            .icon-down{display: inline-block;}
+                            .icon-up{display: none;}  
+                        }
+                        .icon-unfold{display: none;}
+                        .icon-fold{display: inline-block;color:#FF4100;font-weight: bold;}
+                    }
+                }
+            }
+        }
+    }
+    .list-cont{position: absolute;top:90px;left:0;width:100%;background-color: #f5f5f5;overflow-x: hidden;min-height: 86.5%;
+        ul{display: flex;flex-wrap:wrap;
+            li{width:50%;box-sizing: border-box;padding:6px 3px 0 0;
+                &:nth-of-type(2n){padding:6px 0 0 3px;}
+                .img{
+                    img{width: 100%;display: block;}
+                }
+                .text{background-color: #fff;padding:8px 6px;
+                    .now-price{color:rgb(244,110,101);font-weight: 700;} 
+                    .old-price{margin-left:6px;text-decoration: line-through;color:#999;} 
+                    .desc{overflow: hidden;text-overflow: ellipsis;width: 100%;white-space:nowrap;color:#444;line-height: 26px;} 
+                    .sell-num{color:#999;}
+                }
+            }
+            &.list-type{
+                li{width:100%;padding:12px 8px;border-bottom: 1px solid rgba(7,17,27,.2);
+                    a{display: flex;}
+                    .img{width:100px;
+                        img{width: 100px;height:80px;}
+                    }
+                    .text{flex:1;background-color: transparent;margin-left:6px;
+                        .desc{width:70%;}
+                    }
+                }
+            }
+        }
+    }
+}

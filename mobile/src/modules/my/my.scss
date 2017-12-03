@@ -1,0 +1,73 @@
+.personalBox{width: 100%;background:#F4F4F4;
+    .com-footer{background:#fff;}
+    .personalHead{height:50px;background:#DA0000;position:fixed;top:0;left:0;width: 100%;z-index:1000;
+        h3{line-height:50px;font-size:24px;color:#fff;text-align:center;}
+
+    }
+    .personalMain{
+        margin:50px 0;overflow-y:auto;
+        &>div{margin-top:10px; background:#fff;}
+        &>div:first-child{margin-top:0;}
+    }
+    .pMainHead{position:relative;
+
+        img{width: 100%;height:150px;}
+        
+        .loginBox{position:absolute;left:0;top:0;height:150px;background:rgba(0,0,0,.4);width:100%;
+            .loginStatus{position:absolute;left:50%;top:15px;width:40%;padding:10px;
+                    transform:translateX(-50%);
+                h4{color:#fff;font-size:16px;padding-left:5px;}
+                h4:last-child{
+                    padding-top:10px;
+                    white-space:nowrap; 
+                   width:130%; 
+                   overflow:hidden;
+                   text-overflow:ellipsis;
+                }
+                }
+                // <div className="loginHead">
+                //     <img src={baseURI+show.handimgs}/>
+                // </div>
+                // <h4>{show.username}</h4>
+                // <h4>{show.sign}</h4>
+            .loginHead{position:absolute;left:-50%;top:0px;width:80px;height:80px ;
+                border-radius:50%;overflow:hidden;
+                img{width:100%;height:100%;}
+            }
+            p,span{position:absolute;left:50%;font-size:20px;color:#fff;text-align:center;transform:translateX(-50%);}
+            p{top:40px;width: 100%;}
+            span{top:75px;padding:5px 15px;background:#DA0000;border-radius:18px;width:100%;
+                a{color:#fff;}
+            }
+        }
+    }
+    .rightIcon{
+        overflow:hidden;height:50px;line-height:50px;font-size:16px;color:#333333;padding-left:10px;border-bottom:1px solid #F4F4F4;
+        span{float:right;padding-right:5px;}
+    }
+    .pOrder{
+        &>div:last-child{font-size:16px;padding:10px 0;
+            overflow:hidden;
+            a{color:#333;}
+            div{width:25%;
+                float:left;
+                i{text-align:center;display:block;}
+                p{text-align:center;}
+            }
+        }
+    }
+    .pMyPay{
+        &>div:last-child{font-size:16px;padding:10px 0;
+            overflow:hidden;
+            div{width:33.3%;
+                float:left;
+                i{text-align:center;display:block;}
+                p{text-align:center;}
+            }
+        }
+    }
+    
+}
+.quitLogin{padding:20px 0;
+    span{display:block;width:60%;font-size:20px;height:35px;background:#da0000;margin:0 auto;border-radius:20px;text-align:center;color:#fff;}
+}

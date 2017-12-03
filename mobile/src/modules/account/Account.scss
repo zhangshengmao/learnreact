@@ -1,0 +1,50 @@
+// mainRed : #f46e65
+#app{height:100%;
+    &>div{height:100%;}
+}
+#account{display:flex;flex-direction:column;height:100%;position:relative;
+    #acheader{height:50px;position:relative;line-height:50px;
+        i:nth-of-type(1){position:absolute;top:12px;left:20px;}
+        h2{font-size:20px;text-align:center;}
+        i:nth-of-type(2){position:absolute;top:12px;right:20px;width:10%;left:auto;color:#f46e65;font-size:24px;
+        }
+    }
+    #acfooter{height:50px;display:flex;font-size:14px;border-top:1px solid #aaa;
+        .price{color:#f46e65;flex:4;font-size:16px;line-height:50px;padding-left:14px;
+            span{font-weight:bold;}
+        }
+        .account{flex:2;background-color:#f46e65;color:#fff;font-size:18px;line-height:50px;text-align:center;}
+
+    }
+    #acmain{flex:1;height:100%;overflow-y: scroll;
+        .address{background-color:#5E6B85;height:80px;color:#fff;font-size:14px;line-height:80px;text-align:center;
+                label{display:inline-block;width:70px;}
+                input{color:#fff;
+                    line-height:20px;
+                    border:0px;
+                    background-color: #5E6B85;
+                }
+                .add{
+                    span{font-size:20px;font-weight:bold;display:inline-block;}
+                }
+                .username,.tel,.dizhi{height:25px;line-height:25px;text-align:left;padding-left:16px;}            
+        }
+        .blank{height:12px;background-color:#F4F4F4;border-bottom:1px solid #aaa;}
+        .accountList{border-bottom:1px solid #AAAAAA;background-color:#fff;padding-top:12px;
+            li{display:flex;border-top:1px dashed #aaaaaa;padding-top:10px;margin-bottom:8px;padding-left:12px;
+                .imgbox{flex:3.5;
+                    img{width:100%;}
+                }
+                .info{flex:6;padding:0 10px;font-size:12px;position:relative;
+                    p:nth-of-type(2){color:#f46e65;font-weight:bold;margin:2px 0;}
+                    span{display:inline-block;width: 20px;height: 16px;text-align:center;line-height:16px;font-size:14px;}
+                }
+            }
+        }
+        .info{
+            li{height:40px;line-height:40px;font-size:14px;border-bottom:1px solid #aaa;padding-left:12px;
+                input{margin-right:6px;}
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.Myaddress{
+    .personalHead{
+        height:50px;
+        background:#Da0000;
+        div{position:absolute;left:10px;top:0;}
+        text-align:center;line-height:50px;
+        h3{color:#fff;font-size:20px;}
+    }
+    .addAddress{
+        height:60px;line-height:60px;text-align:center;font-size:18px;
+        width:100%;background:#20202F;color:#fff;
+    }
+    .setContent{
+        .addressMsg{
+            margin-top:10px;
+            background:#fff;
+            // <div className="addressMsg">
+            //     <div>
+            //         <div>
+            //             <div>
+            //                 <span>laughing</span>
+            //                 <span>1888888888</span>
+            //             </div>
+            //             <p>收货地址<span>北京天安门</span></p>
+            //         </div>
+            //         <div><span>修改</span><span>删除</span></div>
+            //     </div>
+            // </div>
+            &>div{position:relative;
+                border-bottom:1px solid #ccc;padding:20px 10px 0 10px;
+                &>div:first-child{
+                    div{
+                        overflow:hidden;
+                        span:first-child{
+                            float:left;padding-left:25px;height:25px;line-height:25px;
+                        }
+                        span:last-child{
+                            float:right;padding-right:25px;height:25px;line-height:25px;
+                        }
+                    }
+                        p{
+                          height:35px;line-height:35px;border-bottom:1px dashed #ccc; padding-left:25px; 
+                        }
+                        p,span{font-size:16px;}
+                }
+                &>div:last-child{overflow:hidden;
+                    span{float:right;height:50px;line-height:50px;font-size:16px;}
+                    span:first-child{padding:0 30px 0 50px;}
+                }
+            }
+        }
+    }
+    .chooseaddress{
+        position:absolute;left:20px;bottom:11px;font-size:16px;
+    }
+}
